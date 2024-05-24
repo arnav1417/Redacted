@@ -6,7 +6,7 @@ export default function Login (props) {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
-    const handleSubmit = (e) => {d
+    const handleSubmit = (e) => {
         // e.preventDefault();
     }
 
