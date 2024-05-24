@@ -1,0 +1,57 @@
+::file-selector-button {
+    background-color: #edf2f4;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 0.1px;
+    height: 0.3px;
+    padding-left: 10px;
+    margin-right: 18px;
+    margin-bottom: 1px;
+}
+
+.writeContainer {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+body .w-md-editor-text-pre > code,
+body .w-md-editor-text-input {
+    font-family: "Poppins";
+}
+#markdown{
+    display: none;
+    border:30px solid red;
+}
+.postButton {
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    background-color: #edf2f4;
+    width: 100px;
+    height: 42px;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-top: 18px;
+}
+
+#postTitleField {
+    font-family: "Poppins";
+    font-size: 18px;
+    background-color: #edf2f4;
+    margin-bottom: 18px;
+    border: none;
+    min-width: 50%;
+    height: 42px;
+    padding: 24px 24px 24px 24px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#textAndImageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

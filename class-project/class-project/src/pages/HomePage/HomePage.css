@@ -1,0 +1,15 @@
+.postsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    height: 100vh;
+    width: 100vw;
+}
+.check{
+    height:100vh ;
+    width: 100vw;
+    border: red solid;
+}

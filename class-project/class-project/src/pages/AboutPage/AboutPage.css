@@ -1,0 +1,34 @@
+.aboutPageContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.aboutContainer {
+    padding: 12px;
+}
+
+.profileCard {
+    box-sizing: border-box;
+    width: 25%;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 24px;
+}
+
+p {
+    text-align: center;
+}

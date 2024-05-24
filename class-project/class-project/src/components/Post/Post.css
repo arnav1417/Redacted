@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.postCover {
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-left: 8%;
+}
+
+.postDescription {
+    font-family: "Poppins";
+    text-align: justify;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 8%;
+}
+
+.postTitle {
+    font-family: "Poppins";
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 8%;
+}
+
+.container:hover {
+    background-color: #edf2f4;
+}
