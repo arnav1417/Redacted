@@ -16,7 +16,7 @@ const multer = require('multer');
 
 //Database initialization
 const mongoose = require('mongoose'); 
-mongoose.connect('mongodb+srv://arnav:Arnav1417@cluster0.wkhwuh1.mongodb.net/Blogging'); 
+mongoose.connect('mongodb+srv://*****:*******@cluster0.wkhwuh1.mongodb.net/Blogging'); 
 var db=mongoose.connection; 
 db.on('error', console.log.bind(console, "connection error")); 
 db.once('open', function(callback){ 
@@ -185,12 +185,9 @@ app.post("/write",function(req,res){
 const upload = multer({ dest: './public/data/uploads/' })
 app.post("/imgdata",upload.single('image'),function(req,res){
   console.log("Got something!!");
-  // res.send(req.file.path);
   var Title = req.body.title;
   var Markdown = req.body.markdown;
-  // var image = req.body.image;
   var data = { 
-    // "email":Email,
     "title":Title,
     "markdown":Markdown
 } 
@@ -206,7 +203,6 @@ return res.redirect('http://localhost:3000');
 
 async function finddata() {
   try {
-      // const dataset = await client.db('Ecommerce').collection('shoes').find().toArray();
       const dataset = await db.collection('writestorage').find().toArray();
       return JSON.stringify(dataset);
   }
@@ -222,7 +218,6 @@ app.get("/data",async function(req,res){
         const dataset = await finddata(); // here we get the string json
         res.write(dataset); // whoever requests will get the string json as response
         console.log("sent");
-        // console.log(dataset);
     }
     finally {
         res.end(); // must end response. DONT FOGET
